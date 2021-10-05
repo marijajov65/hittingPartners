@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            table, th, td {
+              border:1px solid black;
+            }
+        </style>
+    </head>
+<body>
+
+    <table style="width:100%">
+        <tr>
+          <th>Player 1</th>
+          <th>Player 2</th>
+          <th>Player 3</th>
+        </tr>
+        <tr>
+          <td id="1"></td>
+          <td id="2"></td>
+        </tr>
+        <tr>
+          <td id="3"></td>
+          <td id="4"></td>
+        </tr>
+        <tr>
+            <td id="5"></td>
+            <td id="6"></td>
+        </tr>
+        <tr>
+            <td id="7"></td>
+            <td id="8"></td>
+            <td id="9"></td>
+        </tr>
+      </table>
+
+      <script>
+        const players=[
+            "Cigan",
+            "Lenkica",
+            "Ma'am",
+            "Slinica",
+            "Amiga",
+            "Bobbies",
+            "Ranch",
+            "Tina",
+            "MJ"
+        ].sort(()=>Math.random()-0.5)
+        document.getElementById("1").innerHTML = players[0];
+        document.getElementById("2").innerHTML = players[1];
+        document.getElementById("3").innerHTML = players[2];
+        document.getElementById("4").innerHTML = players[3];
+        document.getElementById("5").innerHTML = players[4];
+        document.getElementById("6").innerHTML = players[5];
+        document.getElementById("7").innerHTML = players[6];
+        document.getElementById("8").innerHTML = players[7];
+        document.getElementById("9").innerHTML = players[8];
+
+    </script>
+
+</body>
+</html>
